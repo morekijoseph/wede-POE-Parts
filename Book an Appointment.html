@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Book an appointment at Karabo Nail Bar & Hair Salon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | Karabo Nail Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Karabo Nail Bar &amp; Hair Salon</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Book an Appointment</h2>
+            <p>Ready to visit us? Fill in your preferred date and time and we will confirm your booking.</p>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="book-name">Full Name:</label><br>
+                    <input type="text" id="book-name" name="book-name" placeholder="Your full name" required>
+                </p>
+
+                <p>
+                    <label for="book-email">Email Address:</label><br>
+                    <input type="email" id="book-email" name="book-email" placeholder="Your email address" required>
+                </p>
+
+                <p>
+                    <label for="book-phone">Phone Number:</label><br>
+                    <input type="tel" id="book-phone" name="book-phone" placeholder="Your phone number" required>
+                </p>
+
+                <p>
+                    <label for="book-service">Service:</label><br>
+                    <select id="book-service" name="book-service" required>
+                        <option value="">Select a service</option>
+                        <optgroup label="Nail Services">
+                            <option value="classic-manicure">Classic Manicure – R150</option>
+                            <option value="gel-manicure">Gel Manicure – R250</option>
+                            <option value="nail-art">Nail Art – R300</option>
+                            <option value="pedicure">Pedicure – R200</option>
+                        </optgroup>
+                        <optgroup label="Hair Services">
+                            <option value="wash-blow">Wash &amp; Blow Dry – R200</option>
+                            <option value="haircut">Hair Cut &amp; Style – R250</option>
+                            <option value="hair-colour">Hair Colouring – R450</option>
+                            <option value="hair-treatment">Hair Treatment – R350</option>
+                            <option value="braiding">Braiding – R400</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="book-date">Preferred Date:</label><br>
+                    <input type="date" id="book-date" name="book-date" required>
+                </p>
+
+                <p>
+                    <label for="book-time">Preferred Time:</label><br>
+                    <input type="time" id="book-time" name="book-time" min="08:00" max="18:00" required>
+                    <br><small>Salon hours: Mon–Fri 09:00–18:00 &nbsp;|&nbsp; Sat 08:00–17:00 &nbsp;|&nbsp; Sun &amp; Public Holidays: Closed</small>
+                </p>
+
+                <p>
+                    <label for="book-message">Additional Notes (optional):</label><br>
+                    <textarea id="book-message" name="book-message" rows="4" placeholder="Any special requests or information we should know"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Book Appointment</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Karabo Nail Bar &amp; Hair Salon. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
