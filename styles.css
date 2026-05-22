@@ -1,281 +1,368 @@
-/* =============================================
-   styles.css – Karabo Nail Bar & Hair Salon
-   ============================================= */
+/* ============================================
+   Karabo Nail Bar & Hair Salon - Main Stylesheet
+   ============================================ */
 
-/* === RESET & BASE === */
-*, *::before, *::after {
-    box-sizing: border-box;
+/* ----- RESET & BASE ----- */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #2c2c2c;
-    background-color: #fdfaf7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fef9f0;   /* warm, soft background */
+    color: #2c2b28;
+    padding: 0 20px;
 }
 
-/* === TYPOGRAPHY === */
+/* ----- TYPOGRAPHY ----- */
 h1 {
-    font-size: 2rem;
-    font-weight: normal;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-h2 {
-    font-size: 1.6rem;
-    font-weight: normal;
-    color: #7b3f5e;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    color: #9b6a4b;    /* warm brown */
     letter-spacing: 1px;
 }
 
+h2 {
+    font-size: 1.8rem;
+    margin: 30px 0 20px 0;
+    color: #7e5a41;
+    border-left: 5px solid #e0b594;
+    padding-left: 15px;
+}
+
 h3 {
-    font-size: 1.2rem;
-    color: #5a2d4a;
-    margin: 1.5rem 0 0.5rem;
+    font-size: 1.4rem;
+    margin: 25px 0 15px 0;
+    color: #9b6a4b;
 }
 
 h4 {
-    font-size: 1rem;
-    color: #5a2d4a;
-    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    margin: 15px 0 8px 0;
+    color: #aa7a58;
 }
 
 p {
     margin-bottom: 1rem;
-    color: #3d3d3d;
 }
 
 a {
-    color: #7b3f5e;
+    color: #9b6a4b;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
+    color: #d4996b;
     text-decoration: underline;
-    color: #5a2d4a;
 }
 
-small {
-    color: #888;
-    font-size: 0.85rem;
-}
-
-/* === HEADER === */
+/* ----- HEADER & NAVIGATION ----- */
 header {
-    background-color: #7b3f5e;
-    padding: 1.2rem 2rem;
-    text-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-header h1 {
-    margin-bottom: 0.8rem;
-}
-
-/* === NAV === */
 nav ul {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.3rem 1rem;
-    padding: 0;
+    list-style: none;
+    gap: 15px;
+    padding: 15px 0 5px;
+}
+
+nav ul li {
+    margin: 0;
 }
 
 nav ul li a {
-    color: #f5e6ef;
-    font-family: Arial, sans-serif;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-    padding: 4px 8px;
-    border-radius: 4px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 30px;
+    background: #fef3e8;
     transition: background 0.2s;
 }
 
 nav ul li a:hover {
-    background-color: #5a2d4a;
+    background: #e0b594;
+    color: white;
     text-decoration: none;
-    color: #fff;
 }
 
-/* === MAIN === */
+/* alternative for pages using <p> inside nav (services.html, testimonials.html) */
+nav p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+nav p a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 6px 12px;
+    background: #fef3e8;
+    border-radius: 30px;
+}
+
+nav p a:hover {
+    background: #e0b594;
+    color: white;
+}
+
+/* ----- MAIN CONTENT ----- */
 main {
-    max-width: 960px;
-    margin: 2.5rem auto;
-    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 30px;
+    padding: 20px 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
 }
 
-/* === SECTIONS === */
 section {
-    margin-bottom: 3rem;
+    margin-bottom: 40px;
 }
 
-/* === ARTICLES === */
+/* ----- ARTICLES & CARDS (services, blog, etc) ----- */
 article {
-    background: #fff;
-    border: 1px solid #f0dde8;
-    border-radius: 8px;
-    padding: 1.2rem 1.5rem;
-    margin-bottom: 1.5rem;
+    background: #fffbf7;
+    border: 1px solid #f3e5d8;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 25px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-article h3, article h4 {
-    margin-top: 0;
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
-/* === FIGURES & IMAGES === */
+/* service items on services.html */
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px 0;
+    display: block;
+}
+
+/* ----- IMAGES & FIGURES (gallery, products) ----- */
 figure {
     display: inline-block;
-    margin: 0.8rem;
+    margin: 15px;
     text-align: center;
-    vertical-align: top;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+figure:hover {
+    transform: scale(1.02);
 }
 
 figure img {
-    display: block;
-    border-radius: 6px;
-    border: 2px solid #f0dde8;
+    border-radius: 15px;
     width: 200px;
-    height: 160px;
+    height: auto;
     object-fit: cover;
 }
 
 figcaption {
-    font-size: 0.88rem;
-    color: #7b3f5e;
-    margin-top: 0.4rem;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #7e5a41;
+    font-weight: 500;
 }
 
-/* === GALLERY GRID === */
-.gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: flex-start;
+/* For gallery page, make figures responsive */
+.gallery figure, 
+section > figure {
+    width: 200px;
 }
 
-/* === FORMS === */
-form p {
-    margin-bottom: 1.2rem;
+/* ----- FORMS (Book an Appointment) ----- */
+form {
+    background: #fffbf7;
+    padding: 25px;
+    border-radius: 25px;
+    margin-top: 20px;
 }
 
 label {
-    font-family: Arial, sans-serif;
-    font-size: 0.9rem;
-    color: #5a2d4a;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 4px;
+    font-weight: 600;
+    color: #7e5a41;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-input[type="time"],
-select,
-textarea {
+input, select, textarea {
     width: 100%;
-    max-width: 480px;
-    padding: 0.6rem 0.8rem;
-    border: 1px solid #d9b8cc;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #2c2c2c;
-    transition: border-color 0.2s;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    outline: none;
-    border-color: #7b3f5e;
-    box-shadow: 0 0 0 3px rgba(123, 63, 94, 0.12);
-}
-
-textarea {
-    resize: vertical;
-}
-
-button[type="submit"] {
-    background-color: #7b3f5e;
-    color: #fff;
-    border: none;
-    padding: 0.7rem 2rem;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #eedbcb;
+    border-radius: 15px;
     font-size: 1rem;
-    font-family: Arial, sans-serif;
-    border-radius: 6px;
-    cursor: pointer;
-    letter-spacing: 0.5px;
-    transition: background 0.2s;
+    background: white;
+    transition: border 0.2s;
 }
 
-button[type="submit"]:hover {
-    background-color: #5a2d4a;
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #e0b594;
+    box-shadow: 0 0 0 2px rgba(224,181,148,0.2);
 }
 
-/* === CONTACT PAGE === */
-iframe {
-    border-radius: 8px;
-    margin-top: 1rem;
-    max-width: 100%;
-}
-
-/* === HR === */
-hr {
+button, input[type="submit"] {
+    background: #9b6a4b;
+    color: white;
     border: none;
-    border-top: 1px solid #f0dde8;
-    margin: 2rem 0;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: auto;
+    display: inline-block;
 }
 
-/* === FOOTER === */
+button:hover, input[type="submit"]:hover {
+    background: #e0b594;
+    color: #2c2b28;
+}
+
+small {
+    color: #8f8a84;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+/* ----- HORIZONTAL RULES ----- */
+hr {
+    margin: 30px 0;
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, #eedbcb, transparent);
+}
+
+/* ----- FOOTER ----- */
 footer {
-    background-color: #7b3f5e;
-    color: #f5e6ef;
     text-align: center;
-    padding: 1.2rem 2rem;
-    font-family: Arial, sans-serif;
-    font-size: 0.88rem;
-    margin-top: 3rem;
+    padding: 30px 10px 20px;
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #b8a28c;
+    border-top: 1px solid #eedbcb;
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 600px) {
-    h1 { font-size: 1.4rem; }
-    h2 { font-size: 1.2rem; }
+/* ----- RESPONSIVE DESIGN (Mobile First) ----- */
+@media (max-width: 768px) {
+    body {
+        padding: 0 12px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 
     nav ul {
-        gap: 0.3rem 0.5rem;
+        gap: 8px;
     }
 
     nav ul li a {
-        font-size: 0.8rem;
+        padding: 5px 10px;
+        font-size: 0.85rem;
     }
 
     main {
-        padding: 0 1rem;
-        margin: 1.5rem auto;
+        padding: 15px;
+    }
+
+    figure {
+        margin: 10px;
+        width: calc(50% - 20px);
     }
 
     figure img {
-        width: 150px;
-        height: 120px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="date"],
-    input[type="time"],
-    select,
-    textarea {
+        width: 100%;
         max-width: 100%;
     }
+
+    .gallery figure,
+    section > figure {
+        width: calc(50% - 20px);
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .gallery figure,
+    section > figure {
+        width: 100%;
+    }
+
+    button, input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* ----- UTILITY CLASSES (optional) ----- */
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+/* ----- CUSTOM STYLES FOR TESTIMONIALS (optional) ----- */
+.testimonial {
+    font-style: italic;
+    background: #fff6ed;
+    border-left: 4px solid #e0b594;
+}
+
+/* make sure images in services page are responsive */
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* fix for book appointment time small text */
+small {
+    font-size: 0.8rem;
+    color: #a78e78;
 }
