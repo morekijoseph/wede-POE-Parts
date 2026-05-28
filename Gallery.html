@@ -10,17 +10,17 @@
 <body>
 
     <header>
-        <h1>Karabo Nail Bar & Hair Salon</h1>
+        <h1>Karabo Nail Bar &amp; Hair Salon</h1>
         <nav>
-            <ul>
+            <ul id="main-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="About Us.html">About</a></li>
+                <li><a href="about-us.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="Book-Appointment.html">Book-Appointment</a></li>
+                <li><a href="book-appointment.html">Book Appointment</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -31,50 +31,134 @@
             <h2>Our Work</h2>
             <p>Take a look at some of our favourite nail and hair creations.</p>
 
-            <figure>
-                <img src="images/Classic nail.jpeg" alt="Elegant classic manicure" width="200">
-                <figcaption>Classic Manicure</figcaption>
-            </figure>
+            <div class="gallery-grid">
 
-            <figure>
-                <img src="images/Gel nail.jpeg" alt="Shiny gel manicure" width="200">
-                <figcaption>Gel Manicure</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/Classic nail.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/Classic nail.jpeg">
+                        <img src="images/Classic nail.jpeg"
+                             srcset="images/Classic nail.jpeg 400w,
+                                     images/Classic nail.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    25vw"
+                             alt="Elegant classic manicure" loading="lazy">
+                    </picture>
+                    <figcaption>Classic Manicure</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/art nail.jpeg" alt="Creative nail art design" width="200">
-                <figcaption>Nail Art</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/Gel nail.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/Gel nail.jpeg">
+                        <img src="images/Gel nail.jpeg"
+                             srcset="images/Gel nail.jpeg 400w,
+                                     images/Gel nail.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    25vw"
+                             alt="Shiny gel manicure" loading="lazy">
+                    </picture>
+                    <figcaption>Gel Manicure</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/foot nail.jpeg" alt="Relaxing pedicure" width="200">
-                <figcaption>Pedicure</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/art nail.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/art nail.jpeg">
+                        <img src="images/art nail.jpeg"
+                             srcset="images/art nail.jpeg 400w,
+                                     images/art nail.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    25vw"
+                             alt="Creative nail art design" loading="lazy">
+                    </picture>
+                    <figcaption>Nail Art</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/wash.jpeg" alt="Shiny blow‑dry style" width="200">
-                <figcaption>Blow Dry</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/foot nail.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/foot nail.jpeg">
+                        <img src="images/foot nail.jpeg"
+                             srcset="images/foot nail.jpeg 400w,
+                                     images/foot nail.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    25vw"
+                             alt="Relaxing pedicure" loading="lazy">
+                    </picture>
+                    <figcaption>Pedicure</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/Cut.jpeg" alt="Fresh haircut and style" width="200">
-                <figcaption>Hair Cut & Style</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/wash.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/wash.jpeg">
+                        <img src="images/wash.jpeg"
+                             srcset="images/wash.jpeg 400w,
+                                     images/wash.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    25vw"
+                             alt="Shiny blow-dry style" loading="lazy">
+                    </picture>
+                    <figcaption>Blow Dry</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/Colour.jpeg" alt="Vibrant hair colour" width="200">
-                <figcaption>Hair Colouring</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/Cut.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/Cut.jpeg">
+                        <img src="images/Cut.jpeg"
+                             srcset="images/Cut.jpeg 400w,
+                                     images/Cut.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    25vw"
+                             alt="Fresh haircut and style" loading="lazy">
+                    </picture>
+                    <figcaption>Hair Cut &amp; Style</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/Hair braid.jpeg" alt="Intricate braiding style" width="200">
-                <figcaption>Braiding</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/Colour.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/Colour.jpeg">
+                        <img src="images/Colour.jpeg"
+                             srcset="images/Colour.jpeg 400w,
+                                     images/Colour.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    25vw"
+                             alt="Vibrant hair colour" loading="lazy">
+                    </picture>
+                    <figcaption>Hair Colouring</figcaption>
+                </figure>
+
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/Hair braid.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/Hair braid.jpeg">
+                        <img src="images/Hair braid.jpeg"
+                             srcset="images/Hair braid.jpeg 400w,
+                                     images/Hair braid.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    25vw"
+                             alt="Intricate braiding style" loading="lazy">
+                    </picture>
+                    <figcaption>Braiding</figcaption>
+                </figure>
+
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Karabo Nail Bar & Hair Salon. All rights reserved.</p>
+        <p>&copy; 2026 Karabo Nail Bar &amp; Hair Salon. All rights reserved.</p>
     </footer>
 
 </body>
