@@ -5,22 +5,22 @@
     <meta name="description" content="Professional hair and nail products available at Karabo Nail Bar & Hair Salon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products | Karabo Nail Bar</title>
-    <link rel="stylesheet" href="styles.css">   
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Karabo Nail Bar & Hair Salon</h1>
+        <h1>Karabo Nail Bar &amp; Hair Salon</h1>
         <nav>
-            <ul>
+            <ul id="main-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="About Us.html">About</a></li>
+                <li><a href="about_Us.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="Book-Appointment.html">Book-Appointment</a></li>
+                <li><a href="book_Appointment.html">Book Appointment</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,38 +32,94 @@
             <p>These products are for viewing only. They are not available for online purchase. Visit the salon to enquire about availability.</p>
 
             <h3>Hair Products</h3>
+            <div class="products-grid">
 
-            <figure>
-                <img src="images/shampoo.jpeg" alt="Moisturising Shampoo" width="200">
-                <figcaption>Moisturising Shampoo – Deep hydration for all hair types.</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/shampoo.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/shampoo.jpeg">
+                        <img src="images/shampoo.jpeg"
+                             srcset="images/shampoo.jpeg 400w,
+                                     images/shampoo.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    33vw"
+                             alt="Moisturising Shampoo" loading="lazy">
+                    </picture>
+                    <figcaption>Moisturising Shampoo – Deep hydration for all hair types.</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/hair repair.jpeg" alt="Repair Conditioner" width="200">
-                <figcaption>Repair Conditioner – Strengthens and smooths damaged hair.</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/hair repair.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/hair repair.jpeg">
+                        <img src="images/hair repair.jpeg"
+                             srcset="images/hair repair.jpeg 400w,
+                                     images/hair repair.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    33vw"
+                             alt="Repair Conditioner" loading="lazy">
+                    </picture>
+                    <figcaption>Repair Conditioner – Strengthens and smooths damaged hair.</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/oil groth.jpeg" alt="Hair Growth Oil" width="200">
-                <figcaption>Hair Growth Oil – Nourishes scalp and promotes growth.</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/oil growth.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/oil growth.jpeg">
+                        <img src="images/oil growth.jpeg"
+                             srcset="images/oil growth.jpeg 400w,
+                                     images/oil growth.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    33vw"
+                             alt="Hair Growth Oil" loading="lazy">
+                    </picture>
+                    <figcaption>Hair Growth Oil – Nourishes scalp and promotes growth.</figcaption>
+                </figure>
+
+            </div>
 
             <h3>Nail Products</h3>
+            <div class="products-grid">
 
-            <figure>
-                <img src="images/nail polish.jpeg" alt="Gel Nail Polish" width="200">
-                <figcaption>Gel Nail Polish – Long lasting colour and shine.</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/nail polish.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/nail polish.jpeg">
+                        <img src="images/nail polish.jpeg"
+                             srcset="images/nail polish.jpeg 400w,
+                                     images/nail polish.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    33vw"
+                             alt="Gel Nail Polish" loading="lazy">
+                    </picture>
+                    <figcaption>Gel Nail Polish – Long lasting colour and shine.</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/nail strength.jpeg" alt="Nail Strengthener" width="200">
-                <figcaption>Nail Strengthener – Protects and hardens brittle nails.</figcaption>
-            </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/nail strength.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/nail strength.jpeg">
+                        <img src="images/nail strength.jpeg"
+                             srcset="images/nail strength.jpeg 400w,
+                                     images/nail strength.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    33vw"
+                             alt="Nail Strengthener" loading="lazy">
+                    </picture>
+                    <figcaption>Nail Strengthener – Protects and hardens brittle nails.</figcaption>
+                </figure>
+
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Karabo Nail Bar & Hair Salon. All rights reserved.</p>
+        <p>&copy; 2026 Karabo Nail Bar &amp; Hair Salon. All rights reserved.</p>
     </footer>
 
 </body>

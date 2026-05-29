@@ -1,116 +1,199 @@
-<!DOCTYPE html>
+><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Services and prices at Karabo Nail Bar & Hair Salon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Karabo Nail Bar</title>
-    <link rel="stylesheet" href="styles.css">       
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
     <header>
-        <h1>Karabo Nail Bar & Hair Salon</h1>
-
-        <!-- NAVIGATION -->
+        <h1>Karabo Nail Bar &amp; Hair Salon</h1>
         <nav>
-            <p>
-                <a href="index.html">Home</a> |
-                <a href="About Us.html">About</a> |
-                <a href="services.html">Services</a> |
-                <a href="products.html">Products</a> |
-                <a href="gallery.html">Gallery</a> |
-                <a href="testimonials.html">Testimonials</a> |
-                <a href="blog.html">Blog</a> |
-                <a href="Book-Appointment.html">Book-Appointment</a> |
-                <a href="contact.html">Contact</a>
-            </p>
+            <ul id="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_Us.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="book_Appointment.html">Book Appointment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <hr>
+    <main>
+        <section>
+            <h2>Our Services</h2>
 
-    <!-- SERVICES -->
-    <section>
-        <h2>Our Services</h2>
+            <h3>Nail Services</h3>
+            <div class="services-grid">
 
-        <!-- NAIL SERVICES -->
-        <h3>Nail Services</h3>
+                <article>
+                    <h4>Classic Manicure</h4>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/Classic nail.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/Classic nail.jpeg">
+                        <img src="images/Classic nail.jpeg"
+                             srcset="images/Classic nail.jpeg 400w,
+                                     images/Classic nail.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 100vw,
+                                    33vw"
+                             alt="Classic Manicure" loading="lazy">
+                    </picture>
+                    <p>Price: R150</p>
+                </article>
 
-        <article>
-            <h4>Classic Manicure</h4>
-            <img src="images/Classic nail.jpeg" alt="Classic Manicure" width="200">
-            <p>Price: R150</p>
-        </article>
+                <article>
+                    <h4>Gel Manicure</h4>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/gel nail.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/gel nail.jpeg">
+                        <img src="images/gel nail.jpeg"
+                             srcset="images/gel nail.jpeg 400w,
+                                     images/gel nail.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 100vw,
+                                    33vw"
+                             alt="Gel Manicure" loading="lazy">
+                    </picture>
+                    <p>Price: R250</p>
+                </article>
 
-        <article>
-            <h4>Gel Manicure</h4>
-            <img src="images/gel nail.jpeg" alt="Gel Manicure" width="200">
-            <p>Price: R250</p>
-        </article>
+                <article>
+                    <h4>Nail Art</h4>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/art nail.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/art nail.jpeg">
+                        <img src="images/art nail.jpeg"
+                             srcset="images/art nail.jpeg 400w,
+                                     images/art nail.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 100vw,
+                                    33vw"
+                             alt="Nail Art" loading="lazy">
+                    </picture>
+                    <p>Price: R300</p>
+                </article>
 
-        <article>
-            <h4>Nail Art</h4>
-            <img src="images/art nail.jpeg" alt="Nail Art" width="200">
-            <p>Price: R300</p>
-        </article>
+                <article>
+                    <h4>Pedicure</h4>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/foot nail.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/foot nail.jpeg">
+                        <img src="images/foot nail.jpeg"
+                             srcset="images/foot nail.jpeg 400w,
+                                     images/foot nail.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 100vw,
+                                    33vw"
+                             alt="Pedicure" loading="lazy">
+                    </picture>
+                    <p>Price: R200</p>
+                </article>
 
-        <article>
-            <h4>Pedicure</h4>
-            <img src="images/foot nail.jpeg" alt="Pedicure" width="200">
-            <p>Price: R200</p>
-        </article>
+            </div>
 
-        <hr>
+            <hr>
 
-        <!-- HAIR SERVICES -->
-        <h3>Hair Services</h3>
+            <h3>Hair Services</h3>
+            <div class="services-grid">
 
-        <article>
-            <h4>Wash & Blow Dry</h4>
-            <img src="images/wash.jpeg" alt="Wash and Blow Dry" width="200">
-            <p>Price: R200</p>
-        </article>
+                <article>
+                    <h4>Wash &amp; Blow Dry</h4>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/wash.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/wash.jpeg">
+                        <img src="images/wash.jpeg"
+                             srcset="images/wash.jpeg 400w,
+                                     images/wash.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 100vw,
+                                    33vw"
+                             alt="Wash and Blow Dry" loading="lazy">
+                    </picture>
+                    <p>Price: R200</p>
+                </article>
 
-        <article>
-            <h4>Hair Cut & Style</h4>
-            <img src="images/cut.jpeg" alt="Hair Cut and Style" width="200">
-            <p>Price: R250</p>
-        </article>
+                <article>
+                    <h4>Hair Cut &amp; Style</h4>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/cut.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/cut.jpeg">
+                        <img src="images/cut.jpeg"
+                             srcset="images/cut.jpeg 400w,
+                                     images/cut.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 100vw,
+                                    33vw"
+                             alt="Hair Cut and Style" loading="lazy">
+                    </picture>
+                    <p>Price: R250</p>
+                </article>
 
-        <article>
-            <h4>Hair Colouring</h4>
-            <img src="images/colour.jpeg" alt="Hair Colouring" width="200">
-            <p>Price: R450</p>
-        </article>
+                <article>
+                    <h4>Hair Colouring</h4>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/colour.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/colour.jpeg">
+                        <img src="images/colour.jpeg"
+                             srcset="images/colour.jpeg 400w,
+                                     images/colour.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 100vw,
+                                    33vw"
+                             alt="Hair Colouring" loading="lazy">
+                    </picture>
+                    <p>Price: R450</p>
+                </article>
 
-        <article>
-            <h4>Hair Treatment</h4>
-            <img src="images/treat.jpeg" alt="Hair Treatment" width="200">
-            <p>Price: R350</p>
-        </article>
+                <article>
+                    <h4>Hair Treatment</h4>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/treat.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/treat.jpeg">
+                        <img src="images/treat.jpeg"
+                             srcset="images/treat.jpeg 400w,
+                                     images/treat.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 100vw,
+                                    33vw"
+                             alt="Hair Treatment" loading="lazy">
+                    </picture>
+                    <p>Price: R350</p>
+                </article>
 
-        <article>
-            <h4>Braiding</h4>
-            <img src="images/hair braid.jpeg" alt="Braiding" width="200">
-            <p>Price: R400</p>
-        </article>
+                <article>
+                    <h4>Braiding</h4>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="images/hair braid.jpeg">
+                        <source media="(max-width: 768px)" srcset="images/hair braid.jpeg">
+                        <img src="images/hair braid.jpeg"
+                             srcset="images/hair braid.jpeg 400w,
+                                     images/hair braid.jpeg 800w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 100vw,
+                                    33vw"
+                             alt="Braiding" loading="lazy">
+                    </picture>
+                    <p>Price: R400</p>
+                </article>
 
-        <hr>
+            </div>
 
-        <p>
-            To book an appointment, please visit our 
-            <a href="Book-Appointment.html">Book-Appointment</a> page.
-        </p>
-    </section>
+            <hr>
+            <p>To book an appointment, please visit our <a href="book-appointment.html">Book Appointment</a> page.</p>
 
-    <hr>
+        </section>
+    </main>
 
-    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Karabo Nail Bar & Hair Salon. All rights reserved.</p>
+        <p>&copy; 2026 Karabo Nail Bar &amp; Hair Salon. All rights reserved.</p>
     </footer>
 
 </body>
