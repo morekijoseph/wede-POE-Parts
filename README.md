@@ -2,7 +2,7 @@
 
 A modern, responsive beauty salon website built with HTML, CSS, and JavaScript.
 
-![Website Preview]screenshots/screenshot-home.png>
+![Website Preview](screenshots/screenshot-home.png)
 
 ---
 
