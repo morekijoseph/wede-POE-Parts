@@ -71,10 +71,10 @@ A modern, responsive beauty salon website built with HTML, CSS, and JavaScript.
 
 ##Screenshots
 
-![Homepage](screenshots/home.png)
-![Services Page](screenshots/services.png)
-![Gallery with Lightbox](screenshots/gallery-lightbox.png)
-![Mobile View](screenshots/mobile-menu.png)
+![Homepage](screenshots/screenshot-home.png)
+![Services Page](screenshots/screen-services.png)
+![Gallery with Lightbox](screenshots/screenshot-gallery.png)
+![Mobile View](screenshots/screenshot-Mobile View.jpeg)
 
 ---
 
