@@ -74,7 +74,7 @@ A modern, responsive beauty salon website built with HTML, CSS, and JavaScript.
 ![Homepage](screenshots/screenshot-home.png)
 ![Services Page](screenshots/screen-services.png)
 ![Gallery with Lightbox](screenshots/screenshot-gallery.png)
-![Mobile View](c:\Users\jesop\OneDrive - ADvTECH Ltd\Desktop\WEDE POE\screenshots\screenshot-Mobile View.jpeg)
+![Mobile View](screenshots/screenshot-Mobile View.jpeg)
 
 ---
 
